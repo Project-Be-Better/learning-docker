@@ -5,6 +5,7 @@ from dotenv import load_dotenv
 import os
 
 environment = os.getenv("ENVIRONMENT")
+
 if environment == "production":
     load_dotenv(dotenv_path=".env.production") 
 else:
@@ -33,4 +34,4 @@ app.add_middleware(
 # Define a route with a GET method
 @app.get("/")
 async def read_root():
-    return {"message": "Hello, World!"}
+    return {"message": "Hello, this is another World!","env":[os.getenv("ALLOWED_ORIGINS"),os.getenv("BACKEND_STRING")]}
