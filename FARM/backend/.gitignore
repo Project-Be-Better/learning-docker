@@ -93,8 +93,8 @@ dmypy.json
 *~
 
 # Docker
-*.env.production
-*.env.development
+# *.env.production
+# *.env.development
 docker-compose.yml
 Dockerfile
 
