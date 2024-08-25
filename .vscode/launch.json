@@ -7,8 +7,8 @@
             "preLaunchTask": "docker-run: debug",
             "platform": "node",
             "node": {
-                "package": "${workspaceFolder}/Fundamentals-HandsOn-main/L06-02 Using VS Code/package.json",
-                "localRoot": "${workspaceFolder}/Fundamentals-HandsOn-main/L06-02 Using VS Code"
+                "package": "${workspaceFolder}/react workflow/package.json",
+                "localRoot": "${workspaceFolder}/react workflow"
             }
         }
     ]
