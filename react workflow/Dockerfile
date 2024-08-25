@@ -20,7 +20,7 @@ RUN npm run build
 FROM node:lts-alpine AS production
 
 # Set environment to production
-ENV NODE_ENV=production
+# ENV NODE_ENV=production
 
 # Set working directory
 WORKDIR /usr/src/app
