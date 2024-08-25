@@ -1,12 +1,18 @@
-version: '3.4'
+version: '3.8'
 
 services:
-  reactworkflow-dev:
-    image: reactworkflow-dev
+  frontend:
     build:
       context: .
-      dockerfile: Dockerfile.dev
-    env_file:
-      - .env.development
+      dockerfile: Dockerfile.dev  # Specify the development Dockerfile
+    container_name: reactworkflow-dev
     ports:
-      - 3000:3000
+      - "3000:3000"
+    volumes:
+      - .:/app
+      - /app/node_modules
+    networks:
+      - mynetwork
+
+networks:
+  mynetwork:
