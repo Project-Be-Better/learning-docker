@@ -8,11 +8,11 @@ Docker (the software platform) on Linux directly manages containers using the ho
 2. They share the memory and cpu of the computer and OS of the host computer unlike VMs which has its own OS on top of the hypervisor
 3. Containers fix the issue of isolation and density
 
-![](img\ch01-container.png)
+![](img/ch01-container.png)
 
 # Running a web application
 
 1. The container is running at an allocated IP address at the port 80.
 2. The external port 8080 is mapped to the internal port, making it accessible at port 8080
 
-![](img\ch01-web-mapping.png)
+![](img/ch01-web-mapping.png)
